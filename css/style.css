@@ -1,4 +1,18 @@
 @import "reset.css";
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-lightGray: #e6e6e6;
+
+  /* box */
+  --size-box-padding: 600px;
+  --size-box-marginBottom: 52px;
+  --size-box-borderSolid: 1px;
+
+  /* img size */
+  --img-coupon-width: 132px;
+}
 
 * {
   box-sizing: border-box;
@@ -11,13 +25,22 @@ body {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: var(--color-black);
 }
 
 button {
   border: none;
   outline: none;
   background-color: transparent;
+}
+
+tr {
+  border: var(--size-box-borderSolid) solid var(--color-lightGray);
+}
+
+td {
+  padding: 10px 51px;
+  border: var(--size-box-borderSolid) solid var(--color-lightGray);
 }
 
 /* header */
@@ -29,13 +52,14 @@ button {
 
 /* location */
 .location {
-  margin-bottom: 52px;
-  padding: 0 600px;
+  margin-bottom: var(--size-box-marginBottom);
+  padding: 0 var(--size-box-padding);
 }
 
 /* menu list */
 .menu {
-  padding: 0 600px;
+  margin-bottom: var(--size-box-marginBottom);
+  padding: 0 var(--size-box-padding);
 }
 
 .menu__list {
@@ -51,6 +75,27 @@ button {
 
 .menu__link img {
   display: block;
+}
+
+/* coupon list */
+.coupon__list {
+  margin: auto;
+}
+
+.coupon__link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.coupon__link img {
+  display: block;
+}
+
+.coupon__row .coupon__data:nth-child(1) img,
+.coupon__row .coupon__data:nth-child(2) img {
+  width: var(--img-coupon-width);
+  height: auto;
 }
 
 /* media query */
