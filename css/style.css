@@ -1,35 +1,26 @@
 @import "reset.css";
-@import "grid.min.css";
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    margin: 0;
-    font-family: 'Noto Sans KR', sans-serif;
+  margin: 0;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #000000;
 }
 
 /* header */
-.header__container {
-    position: relative;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.header__container i {
-    font-size: 25px;
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 /* 768(Desktop) */
 /* media query */
 @media screen and (min-width: 768px) {
-
-}
-
-/* custom grid system -fix container width */
-@media screen and (min-width: 1200px) {
-    .container {
-        max-width: 960px !important;
-    }
 }
