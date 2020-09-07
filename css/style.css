@@ -1,4 +1,5 @@
 @import "reset.css";
+
 :root {
   /* color */
   --color-white: #ffffff;
@@ -8,9 +9,9 @@
 
   /* box */
   --size-box-padding: 600px;
-  --size-box-marginTop-small: 15px;
-  --size-box-marginBottom-small: 32px;
-  --size-box-marginBottom-middle: 52px;
+  --size-box-margin-think: 15px;
+  --size-box-margin-small: 32px;
+  --size-box-margin-middle: 52px;
   --size-box-borderSolid: 1px;
 
   /* img size */
@@ -53,19 +54,19 @@ td {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-bottom: var(--size-box-marginBottom-small);
+  margin-bottom: var(--size-box-margin-small);
   border-bottom: var(--size-box-borderSolid) solid var(--color-lightGray);
 }
 
 /* location */
 .location {
-  margin-bottom: var(--size-box-marginBottom-middle);
+  margin-bottom: var(--size-box-margin-middle);
   padding: 0 var(--size-box-padding);
 }
 
 /* menu list */
 .menu {
-  margin-bottom: var(--size-box-marginBottom-middle);
+  margin-bottom: var(--size-box-margin-middle);
   padding: 0 var(--size-box-padding);
 }
 
@@ -86,7 +87,7 @@ td {
 
 /* coupon list */
 .coupon {
-  margin-bottom: var(--size-box-marginBottom-small);
+  margin-bottom: var(--size-box-margin-small);
 }
 
 .coupon__list {
@@ -121,7 +122,7 @@ td {
 }
 
 .advertising__link--first {
-  margin-top: var(--size-box-marginTop-small);
+  margin: var(--size-box-margin-think) 0;
 }
 
 .advertising__link--first img {
@@ -129,6 +130,17 @@ td {
   height: var(--img-advertising-height);
 }
 
+/* advertising slide */
+.advertising__slide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: var(--size-box-margin-think);
+}
+
+.slide__link {
+  display: block;
+}
 /* media query */
 @media screen and (max-width: 768px) {
 }
