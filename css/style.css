@@ -155,6 +155,7 @@ td {
   width: var(--img-advertising-width);
   height: 238px;
   margin: auto;
+  margin-bottom: var(--size-box-margin-think);
   padding: 10px;
   background-color: var(--color-white);
 }
@@ -197,7 +198,16 @@ td {
   border: var(--size-box-borderSolid) solid black;
 }
 
-.tag__link {
+/* advertinsing__second */
+.advertising__second {
+  display: flex;
+  justify-content: center;
+  margin-bottom: var(--size-box-margin-think);
+}
+
+.advertising__link--second img {
+  width: var(--img-advertising-width);
+  height: auto;
 }
 
 /* media query */
