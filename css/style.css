@@ -218,7 +218,7 @@ button {
 .event__line {
   background-color: var(--color-white);
   width: 770px;
-  height: 380px;
+  height: 100%;
   margin: auto;
   margin-bottom: var(--size-box-margin-think);
   padding: 15px;
@@ -291,7 +291,7 @@ button {
 .fun__line {
   background-color: var(--color-white);
   width: 770px;
-  height: 380px;
+  height: 100%;
   margin: auto;
   padding: 15px;
 }
